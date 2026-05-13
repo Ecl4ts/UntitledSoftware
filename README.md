@@ -42,4 +42,4 @@ UnnamedLibrary:allowPlayerUI()
 This allows for the UI to be parented to LocalPlayer.PlayerGUI
 **Some games may easily detect this, use at your own risk.**
 
-For more help, check out [join our Discord](https://discord.gg/YmrUNMw4vd).
+For more help, [join our Discord](https://discord.gg/YmrUNMw4vd).
