@@ -1,13 +1,13 @@
-# [Titled Library](https://discord.gg/YmrUNMw4vd)
+# [Unnamed Library](https://discord.gg/YmrUNMw4vd)
 A simple UI Library designed and developed by ecl4ts.
 
-Version: v0.1.1 (Build 0)
+Version: v0.1.1 (Build 1)
 
 ## Getting Started
 To load the library, use:
 
 ```lua
-local UnnamedLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ecl4ts/UntitledSoftware/main/src/client/UnnamedLibrary.lua"))()
+local UnnamedLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ecl4ts/UntitledSoftware/main/UnnamedLibrary.luau"))()
 ```
 
 Next intialize the library by using:
