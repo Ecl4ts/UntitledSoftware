@@ -7,37 +7,37 @@ Version: v0.1.1 (Build 1)
 To load the library, use:
 
 ```lua
-local UnnamedLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ecl4ts/UntitledSoftware/main/UnnamedLibrary.luau"))()
+local Library = loadstring(game:HttpGet("https://github.com/Ecl4ts/PlutoHub/blob/main/PlutoLib/PlutoLibSource.lua"))()
 ```
 
 Next intialize the library by using:
 ```lua
-UnnamedLibrary:intialize("[THEME]","[FONT]","[TOGGLEKEY]") -- Theme: "Dark" OR "Light", Font: "Enum.Font" ToggleKey: Enum.Keycode
+Library:intialize("[THEME]","[FONT]","[TOGGLEKEY]") -- Theme: "Dark" OR "Light", Font: "Enum.Font" ToggleKey: Enum.Keycode
 ```
 This creates the MainUI and sets all the needed variables
 
 
 You can name your UI by using:
 ```lua
-UnnamedLibrary:createTitle("[TITLE]","[VERSION]") -- Title,Theme: String
+Library:createTitle("[TITLE]","[VERSION]") -- Title,Theme: String
 ```
 This just names the MainUI -- Note: The title auto formats, with the game name. (E.g: "Untitled Software - V0 - ABC")
 
 To protect any **custom** UI elements, run:
 ```lua
-UnnamedLibrary:protectName([ELEMENT]) -- Element: Instance
+Library:protectName([ELEMENT]) -- Element: Instance
 ```
 This renames **any** instance to a mix of different unicode characters
 
 If you run into any problems, try:
 ```lua
-UnnamedLibrary:debug()
+Library:debug()
 ```
 This prints all actions
 
 If the GUI won't show, try:
 ```lua
-UnnamedLibrary:allowPlayerUI()
+Library:allowPlayerUI()
 ```
 This allows for the UI to be parented to LocalPlayer.PlayerGUI
 **Some games may easily detect this, use at your own risk.**
