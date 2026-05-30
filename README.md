@@ -1,4 +1,4 @@
-# [Unnamed Library](https://discord.gg/YmrUNMw4vd)
+# [PlutoLib](https://discord.gg/YmrUNMw4vd)
 A simple UI Library designed and developed by ecl4ts.
 
 Version: v0.1.1 (Build 1)
