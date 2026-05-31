@@ -1,4 +1,3 @@
--- Script Path: game:GetService("Workspace").Macie_bean.AntiJump
 -- Took 0.49s to decompile.
 -- Executor: Madium (1.3.8.0) (madium my love ❤️)
 
