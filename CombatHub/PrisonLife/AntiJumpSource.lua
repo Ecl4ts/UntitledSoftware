@@ -3,24 +3,30 @@
 -- Executor: Madium (1.3.8.0) (madium my love ❤️)
 
 -- https://lua.expert/
-game:GetService("RunService")
+local RunService = game:GetService("RunService")
 local Humanoid = script.Parent:WaitForChild("Humanoid")
 local v1 = 2
 local v2 = 0
-Humanoid:GetPropertyChangedSignal("Jump"):Connect(function() --[[ Line: 12 | Upvalues: Humanoid (copy), v2 (ref), v1 (ref) ]]
+
+Humanoid:GetPropertyChangedSignal("Jump"):Connect(function()
     if not Humanoid.Jump then
         return
     end
-    local v12 = Humanoid:GetState()
-    if v12 == Enum.HumanoidStateType.Freefall or (v12 == Enum.HumanoidStateType.Jumping or v12 == Enum.HumanoidStateType.Landed) then
+
+    local state = Humanoid:GetState()
+    if state == Enum.HumanoidStateType.Freefall
+    or state == Enum.HumanoidStateType.Jumping
+    or state == Enum.HumanoidStateType.Landed then
         return
     end
-    local v22 = os.clock()
-    local v3 = v22 - v2
-    if v3 > 0 then
-        v1 = math.min(2, v1 + v3 * 1.15)
+
+    local now = os.clock()
+    local delta = now - v2
+    if delta > 0 then
+        v1 = math.min(2, v1 + delta * 1.15)
     end
-    v2 = v22
+    v2 = now
+
     if v1 >= 1 then
         v1 = v1 - 1
     else
